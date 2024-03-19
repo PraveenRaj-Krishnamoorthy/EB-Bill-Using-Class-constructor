@@ -12,8 +12,13 @@ class classes{
         } else {
             this.amount = this.unit*4;
         }
-        if (this.p>this.c) {
+        if (parseInt(this.p)>parseInt(this.c)) {
             alert("Previous should be less than current!");
+            location.reload();
+        }
+        if (this.n=="" || thhis.p==""||this.c=="") {
+            alert("Please enter all fields!")
+            output.innerHTML=""
             location.reload();
         }
     }
